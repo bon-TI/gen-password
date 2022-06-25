@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    
+
+body{
+    background-color: #212121;
+    background-size: 100px 120px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 105 118.8" width="105" height="118" style="opacity: 0.5; filter: grayscale(0);"><text x="0em" y="1em" font-size="30" transform="rotate(340 18.75 18)">🔐</text></svg>');
+}
+
+.navbar-brand{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5em;
+}
