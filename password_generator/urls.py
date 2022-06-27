@@ -21,13 +21,16 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 # managing the error views
 from django.conf.urls import handler404, handler500
 from generator.views import error_404, error_505
+from django.conf import settings
+from django.conf.urls.static import static
+
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
     path('about', views.about, name='about'),
     path('', views.home, name='home'),
     path('generate-password', views.password, name='password'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = error_404.as_view()
 handler500 = error_505.as_error_view()
